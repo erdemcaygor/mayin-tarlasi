@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mayin-tarlasi/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/mayin-tarlasi/static/js/main.894085b5.chunk.js",
+    "main.js.map": "/mayin-tarlasi/static/js/main.894085b5.chunk.js.map",
+    "runtime-main.js": "/mayin-tarlasi/static/js/runtime-main.f4011071.js",
+    "runtime-main.js.map": "/mayin-tarlasi/static/js/runtime-main.f4011071.js.map",
+    "static/js/2.8d1a4942.chunk.js": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js",
+    "static/js/2.8d1a4942.chunk.js.map": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js.map",
+    "static/js/3.32870b29.chunk.js": "/mayin-tarlasi/static/js/3.32870b29.chunk.js",
+    "static/js/3.32870b29.chunk.js.map": "/mayin-tarlasi/static/js/3.32870b29.chunk.js.map",
+    "index.html": "/mayin-tarlasi/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/mayin-tarlasi/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.8d1a4942.chunk.js.LICENSE.txt": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4011071.js",
+    "static/js/2.8d1a4942.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.894085b5.chunk.js"
+  ]
+}
