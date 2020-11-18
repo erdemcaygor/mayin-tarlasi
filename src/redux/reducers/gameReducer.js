@@ -24,6 +24,24 @@ const gameReducer = (state = initialState, action) => {
           [payload.index]: { ...state.cellValues[payload.index], show: true },
         },
       };
+    case actionTypes.GAME_FINISHED:
+      debugger;
+      return {
+        ...state,
+        gameFinished: true,
+        cellValues: {
+          ...state.cellValues,
+          [payload.index]: { ...state.cellValues[payload.index], show: true },
+        },
+      };
+    case actionTypes.PLAY_AGAIN:
+      debugger;
+      return {
+        ...state,
+        gameFinished: false,
+        cellValues: generateCellValues(),
+        point: 0,
+      };
     default:
       return state;
   }

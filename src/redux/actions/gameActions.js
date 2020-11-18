@@ -12,3 +12,16 @@ export const updateUserPoint = (index, point) => {
     payload: { point, index },
   };
 };
+
+export const gameFinished = (index, point) => {
+  return {
+    type: actionTypes.GAME_FINISHED,
+    payload: { point, index },
+  };
+};
+
+export const playAgain = () => {
+  return {
+    type: actionTypes.PLAY_AGAIN,
+  };
+};

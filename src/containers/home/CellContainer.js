@@ -2,7 +2,11 @@ import React, { useEffect, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Cell, Container } from "../../components";
-import { updateUserPoint, startGame } from "../../redux/actions/gameActions";
+import {
+  updateUserPoint,
+  startGame,
+  gameFinished,
+} from "../../redux/actions/gameActions";
 
 const CellContainer = (props) => {
   const dispatch = useDispatch();
@@ -14,7 +18,11 @@ const CellContainer = (props) => {
   }, []);
 
   const onHandleClick = useCallback((cellIndex, cellValue) => {
-    dispatch(updateUserPoint(cellIndex, cellValue));
+    if (cellValue === 0) {
+      dispatch(gameFinished(cellIndex, cellValue));
+    } else {
+      dispatch(updateUserPoint(cellIndex, cellValue));
+    }
   });
 
   const renderRow = (columnIndex) => {
@@ -25,6 +33,7 @@ const CellContainer = (props) => {
           key={`${columnIndex}${i}`}
           value={gameReducer?.cellValues[`${columnIndex}${i}`]?.value}
           showValue={gameReducer?.cellValues[`${columnIndex}${i}`]?.show}
+          gameFinished={gameReducer?.gameFinished}
           borderLeft={"solid 2px black"}
           borderTop={"solid 2px black"}
           borderRight={i === cellCount - 1 ? "solid 2px black" : ""}
