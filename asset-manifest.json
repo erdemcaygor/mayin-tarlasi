@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/mayin-tarlasi/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mayin-tarlasi/static/js/main.894085b5.chunk.js",
-    "main.js.map": "/mayin-tarlasi/static/js/main.894085b5.chunk.js.map",
-    "runtime-main.js": "/mayin-tarlasi/static/js/runtime-main.f4011071.js",
-    "runtime-main.js.map": "/mayin-tarlasi/static/js/runtime-main.f4011071.js.map",
-    "static/js/2.8d1a4942.chunk.js": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js",
-    "static/js/2.8d1a4942.chunk.js.map": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js.map",
-    "static/js/3.32870b29.chunk.js": "/mayin-tarlasi/static/js/3.32870b29.chunk.js",
-    "static/js/3.32870b29.chunk.js.map": "/mayin-tarlasi/static/js/3.32870b29.chunk.js.map",
+    "main.css": "/mayin-tarlasi/static/css/main.37c0226b.chunk.css",
+    "main.js": "/mayin-tarlasi/static/js/main.665a641d.chunk.js",
+    "main.js.map": "/mayin-tarlasi/static/js/main.665a641d.chunk.js.map",
+    "runtime-main.js": "/mayin-tarlasi/static/js/runtime-main.b72298bf.js",
+    "runtime-main.js.map": "/mayin-tarlasi/static/js/runtime-main.b72298bf.js.map",
+    "static/js/2.34d47660.chunk.js": "/mayin-tarlasi/static/js/2.34d47660.chunk.js",
+    "static/js/2.34d47660.chunk.js.map": "/mayin-tarlasi/static/js/2.34d47660.chunk.js.map",
+    "static/js/3.d37310d0.chunk.js": "/mayin-tarlasi/static/js/3.d37310d0.chunk.js",
+    "static/js/3.d37310d0.chunk.js.map": "/mayin-tarlasi/static/js/3.d37310d0.chunk.js.map",
     "index.html": "/mayin-tarlasi/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/mayin-tarlasi/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.8d1a4942.chunk.js.LICENSE.txt": "/mayin-tarlasi/static/js/2.8d1a4942.chunk.js.LICENSE.txt"
+    "static/css/main.37c0226b.chunk.css.map": "/mayin-tarlasi/static/css/main.37c0226b.chunk.css.map",
+    "static/js/2.34d47660.chunk.js.LICENSE.txt": "/mayin-tarlasi/static/js/2.34d47660.chunk.js.LICENSE.txt",
+    "static/media/moon.ed5f394f.svg": "/mayin-tarlasi/static/media/moon.ed5f394f.svg",
+    "static/media/sunny.137e9c17.svg": "/mayin-tarlasi/static/media/sunny.137e9c17.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4011071.js",
-    "static/js/2.8d1a4942.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.894085b5.chunk.js"
+    "static/js/runtime-main.b72298bf.js",
+    "static/js/2.34d47660.chunk.js",
+    "static/css/main.37c0226b.chunk.css",
+    "static/js/main.665a641d.chunk.js"
   ]
 }
