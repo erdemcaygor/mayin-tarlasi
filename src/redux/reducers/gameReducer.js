@@ -1,4 +1,4 @@
-import actionTypes from "../constants";
+import { actionTypes } from "../constants";
 import { generateCellValues } from "../../utils/helpers";
 
 const initialState = {
@@ -25,7 +25,6 @@ const gameReducer = (state = initialState, action) => {
         },
       };
     case actionTypes.GAME_FINISHED:
-      debugger;
       return {
         ...state,
         gameFinished: true,
@@ -35,7 +34,6 @@ const gameReducer = (state = initialState, action) => {
         },
       };
     case actionTypes.PLAY_AGAIN:
-      debugger;
       return {
         ...state,
         gameFinished: false,

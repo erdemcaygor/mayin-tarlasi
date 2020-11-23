@@ -12,6 +12,7 @@ const Container = styled.div`
   padding: ${(props) => props.padding};
   border-bottom: ${(props) => props.borderBottom};
   border-top: ${(props) => props.borderTop};
+  border-color: ${({ theme }) => theme.borderColor};
 `;
 
 Container.propTypes = {

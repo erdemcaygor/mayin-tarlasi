@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import gameReducer from "../../redux/reducers/gameReducer";
 
 const CellContainer = styled.div`
   width: 50px;
@@ -10,12 +9,13 @@ const CellContainer = styled.div`
   border-right: ${(props) => props.borderRight};
   border-top: ${(props) => props.borderTop};
   border-bottom: ${(props) => props.borderBottom};
+  border-color: ${({ theme }) => theme.cellBorderColor};
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background: ${(props) =>
-    getMapColor(props.value, props.showValue, props.gameFinished)};
+    getMapColor(props.value, props.showValue, props.gameFinished, props.theme)};
 `;
 
 const mapColor = {
@@ -26,12 +26,12 @@ const mapColor = {
   finished: "#f7f7f7",
 };
 
-const getMapColor = (value, showValue, gameFinished) => {
+const getMapColor = (value, showValue, gameFinished, theme) => {
   if (value != null) {
     if (showValue) {
       return mapColor[value];
     } else if (gameFinished) {
-      return value === 0 ? mapColor[value] : mapColor.finished;
+      return value === 0 ? mapColor[value] : theme?.disabledCellBackground;
     }
   }
   return "";

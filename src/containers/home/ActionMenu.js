@@ -2,16 +2,26 @@ import React from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Container, Button, ButtonWrapper } from "../../components";
+import {
+  Container,
+  Button,
+  ButtonWrapper,
+  ThemeToggle,
+} from "../../components";
 import { playAgain } from "../../redux/actions/gameActions";
+import { changeTheme } from "../../redux/actions/globalActions";
 
 const ScoreContainer = styled.div`
   padding: 5px;
-  border: solid 2px black;
+  border: ${({ theme }) => theme.scoreContainerBorder};
+  & span {
+    color: ${({ theme }) => theme.textColor};
+  }
 `;
 
 const ActionMenu = (props) => {
   const gameReducer = useSelector((state) => state.gameReducer);
+  const globalReducer = useSelector((state) => state.globalReducer);
   const dispatch = useDispatch();
   return (
     <Container
@@ -27,7 +37,14 @@ const ActionMenu = (props) => {
         )}
       </Container>
       <Container alignItems="center">
-        <ScoreContainer>Score: {gameReducer?.point || 0}</ScoreContainer>
+        <ThemeToggle
+          toggleTheme={(theme) => {
+            dispatch(changeTheme());
+          }}
+          themeType={globalReducer?.theme}></ThemeToggle>
+        <ScoreContainer>
+          <span>Score: {gameReducer?.point || 0}</span>
+        </ScoreContainer>
       </Container>
     </Container>
   );

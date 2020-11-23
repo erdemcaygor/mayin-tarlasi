@@ -7,13 +7,15 @@ import ActionMenu from "./ActionMenu";
 const MainContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  background: ${(props) => props.theme.mainBackground};
+  height: 100%;
 `;
 
 const Content = styled.div`
   grid-column: ${(props) => props.span};
 `;
 
-const Home = () => {
+const Home = (props) => {
   return (
     <MainContainer>
       <Content span="span 2" />
